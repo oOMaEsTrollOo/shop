@@ -302,3 +302,7 @@ body {
     display: flex;
     padding: 24px 0;
 }
+
+.footer__link {
+    padding: 0 8px 0 0
+}
