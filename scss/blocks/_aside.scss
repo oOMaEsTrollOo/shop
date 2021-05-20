@@ -1,0 +1,27 @@
+.aside {
+    background-color: $black;
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        padding: 103px 0 104px 0;
+    }
+    &__item {
+        width: 360px;
+        text-align: center;
+        color: $whitesmoke;
+    }
+    &__item-img {
+        padding-bottom: 28px;
+    }
+    &__item-heading {
+        padding-bottom: 16px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    &__item-text {
+        font-weight: 300;
+        font-size: 13.972px;
+        line-height: 17px;
+    }
+}

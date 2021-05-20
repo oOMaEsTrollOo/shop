@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/reset.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <title>Registration</title>
@@ -66,36 +65,36 @@
         </nav>
     </header>
     <main>
-        <section class="registration">
-            <h2 class="registration__header container">registration</h2>
+        <section class="form__registration">
+            <h2 class="form__header container">registration</h2>
         </section>
-        <section class="form container">
+        <fieldset class="form container">
             <div class="form__reg">
                 <form action="endpoint">
-                    <div class="form__reg-header">Your Name</div>
+                    <legend class="form__reg-header">Your Name</legend>
                     <input class="form__reg-first" type="text" placeholder="First Name">
                     <input class="form__reg-last" type="text" placeholder="Last Name">
                     <div class="form__radio">
-                        <label class="radio-text"><input class="radio" type="radio" name="gender" checked>Male</label>
-                        <label class="radio-text"><input class="radio-female radio" type="radio" name="gender">Female</label>
+                        <label class="form__radio-text"><input class="form__radio-input" type="radio" name="gender" checked>Male</label>
+                        <label class="form__radio-text"><input class="form__radio-female form__radio-input" type="radio" name="gender">Female</label>
                     </div>
-                    <div class="form-login">Login details</div>
+                    <legend class="form-login">Login details</legend>
                     <input class="form-email" type="email" placeholder="Email">
                     <input class="form-password" type="password" placeholder="Password">
                     <div class="form__login-text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</div>
-                    <button class="form-button">join now<img class="arrow" src="./img/arrow.svg" alt="arrow"></button>
+                    <button type="button" class="form-button">join now<img class="form__arrow" src="./img/arrow.svg" alt="arrow"></button>
                 </form>
             </div>
-            <div class="form__info">
-                <div class="form__info-loyalty">LOYALTY HAS ITS PERKS</div>
-                <div class="form__info-text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</div>
-                <div class="form__info-text"><img class="form__info-vector" src="./img/vector.svg" alt="vector">15% off welcome offer</div>
-                <div class="form__info-text"><img class="form__info-vector" src="./img/vector.svg" alt="vector">Free shipping, returns and exchanges on all orders</div>
-                <div class="form__info-text"><img class="form__info-vector" src="./img/vector.svg" alt="vector">$10 off a purchase on your birthday</div>
-                <div class="form__info-text"><img class="form__info-vector" src="./img/vector.svg" alt="vector">Early access to products</div>
-                <div class="form__info-text"><img class="form__info-vector" src="./img/vector.svg" alt="vector">Exclusive offers & rewards </div>
-            </div>
-        </section>
+            <ul class="form__info">
+                <li class="form__info-loyalty">LOYALTY HAS ITS PERKS</li>
+                <!-- сделаю галочки через псевдоэлемент -->
+                <li class="form__info-text"><img class="form__info-vector" src="./img/vector.svg" alt="vector">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</li>
+                <li class="form__info-text"><img class="form__info-vector" src="./img/vector.svg" alt="vector">15% off welcome offer</li>
+                <li class="form__info-text"><img class="form__info-vector" src="./img/vector.svg" alt="vector">Free shipping, returns and exchanges on all orders</li>
+                <li class="form__info-text"><img class="form__info-vector" src="./img/vector.svg" alt="vector">$10 off a purchase on your birthday</li>
+                <li class="form__info-text"><img class="form__info-vector" src="./img/vector.svg" alt="vector">Early access to products</li>
+                <li class="form__info-text"><img class="form__info-vector" src="./img/vector.svg" alt="vector">Exclusive offers & rewards</li>
+        </fieldset>
     </main>
     <footer class="footer">
         <section class="footer__top">
