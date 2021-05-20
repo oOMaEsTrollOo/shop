@@ -1,0 +1,100 @@
+.footer {
+    &__top {
+        min-height: 448px;
+        display: flex;
+        justify-content: space-around;
+        background-image: url(../img/footer.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%
+    }
+    &__top-text {
+        padding-top: 30px;
+        width: 360px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    &__blog {
+        padding-top: 87px;
+        text-align: center;
+    }
+    &__sub {
+        padding-top: 150px;
+        text-transform: uppercase;
+    }
+    &__sub-heading {
+        font-size: 24px;
+        line-height: 40px;
+        text-align: center;
+        font-family: Lato;
+        font-weight: 700;
+    }
+    &__sub-text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    &__bottom {
+        background-color: $black;
+        display: flex;
+        justify-content: space-around;
+    }
+    &__bottom-text {
+        color: $whitesmoke;
+        padding: 30px 0;
+        font-size: 16px;
+        line-height: 19px;
+        width: 400px;
+    }
+    &__bottom-list {
+        display: flex;
+        padding: 24px 0;
+    }
+    &__link {
+        padding: 0 8px 0 0
+    }
+    &__form {
+        padding-top: 32px;
+    }
+    &__email {
+        -webkit-border-top-left-radius: 30px;
+        -webkit-border-bottom-left-radius: 30px;
+        -moz-border-radius-topleft: 30px;
+        -moz-border-radius-bottomleft: 30px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        background-color: $gainsboro;
+        border: none;
+        width: 212px;
+        height: 49px;
+        padding: 0 22px;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    &__button {
+        -webkit-border-top-right-radius: 30px;
+        -webkit-border-bottom-right-radius: 30px;
+        -moz-border-radius-topright: 30px;
+        -moz-border-radius-bottomright: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        background-color: $dark-pink;
+        border: none;
+        width: 100px;
+        height: 49px;
+        color: $lavenderblush;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: center;
+        position: relative;
+        left: -4px;
+    }
+}

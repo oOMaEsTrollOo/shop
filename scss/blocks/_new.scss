@@ -1,0 +1,33 @@
+.new {
+    background: $whitesmoke;
+    min-height: 148px;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list {
+        display: flex;
+        padding-top: 65px;
+    }
+    &__list-a {
+        text-decoration: none;
+        color: $dimgray2;
+        text-transform: uppercase;
+    }
+    &__header {
+        padding-top: 59px;
+        font-family: Lato;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: $lightcoral;
+        text-transform: uppercase;
+    }
+    &__list-mew {
+        font-family: Lato;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: $lightcoral;
+    }
+}

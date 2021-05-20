@@ -1,0 +1,117 @@
+.form {
+    display: flex;
+    padding-top: 64px;
+    &__registration {
+        background: $whitesmoke;
+        min-height: 148px;
+    }
+    &__header {
+        padding-top: 65px;
+        padding-top: 59px;
+        font-family: Lato;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: $lightcoral;
+        text-transform: uppercase;
+    }
+    &__info {
+        max-width: 652px;
+    }
+    &__reg-header {
+        padding-bottom: 20px;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 19px;
+    }
+    &__reg-first {
+        width: 336px;
+        height: 45px;
+        margin-bottom: 21px;
+        padding-left: 18px;
+    }
+    &__reg-last {
+        width: 336px;
+        height: 45px;
+        margin-bottom: 31.5px;
+        padding-left: 18px;
+        color: $darkgray2;
+    }
+    &__radio-input {
+        margin-right: 10px;
+        width: 17px;
+        height: 17px;
+        border: 1px solid #A4A4A4;
+        box-sizing: border-box;
+        vertical-align: sub;
+    }
+    &__radio-female {
+        margin-left: 20px;
+    }
+    &__radio {
+        display: flex;
+        padding-bottom: 34px;
+    }
+    &__radio-text {
+        font-family: Lato;
+        font-size: 11px;
+    }
+    &-login {
+        font-weight: 300;
+        font-size: 16px;
+        padding-bottom: 21px;
+    }
+    &-email {
+        width: 336px;
+        height: 45px;
+        margin-bottom: 21px;
+        padding-left: 18px;
+    }
+    &-password {
+        width: 336px;
+        height: 45px;
+        margin-bottom: 15.5px;
+        padding-left: 18px;
+    }
+    &__login-text {
+        font-weight: 300;
+        font-size: 13px;
+        color: $darkgray2;
+        width: 359px;
+        margin-bottom: 39px;
+    }
+    &-button {
+        width: 167px;
+        height: 50px;
+        font-size: 14px;
+        color: $lavenderblush;
+        background: #F16D7F;
+        text-transform: uppercase;
+        outline: 0;
+        border: 0;
+        margin-bottom: 96px;
+    }
+    &__arrow {
+        padding-left: 20px;
+    }
+    &__info-loyalty {
+        font-weight: 300;
+        font-size: 24px;
+        padding-bottom: 22px;
+    }
+    &__info-vector {
+        padding-right: 23px;
+    }
+    &__info-text {
+        font-weight: 300;
+        font-size: 24px;
+        padding-bottom: 21px;
+        line-height: 1;
+    }
+    &__info-welcome {
+        font-weight: 300;
+        font-size: 24px;
+    }
+}
