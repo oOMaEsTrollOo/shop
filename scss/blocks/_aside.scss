@@ -4,11 +4,23 @@
         display: flex;
         justify-content: space-around;
         padding: 103px 0 104px 0;
+        @include tablet {
+            @media (max-width: 1050px) {
+                display: block;
+                padding: 48px 0 16px 0;
+            }
+        }
     }
     &__item {
         width: 360px;
         text-align: center;
         color: $whitesmoke;
+        @include tablet {
+            @media (max-width: 1050px) {
+                padding: 0 0 48px 0;
+                margin: 0 auto
+            }
+        }
     }
     &__item-img {
         padding-bottom: 28px;

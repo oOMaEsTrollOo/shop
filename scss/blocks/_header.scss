@@ -60,11 +60,37 @@
         background-color: transparent;
         border: none;
         margin: 0 34px 0 0;
+        @include tablet {
+            @media (max-width: $max-mobile-width) {
+                margin: 0;
+            }
+        }
     }
     &__link {
         margin: 0 34px 0 0;
+        @include tablet {
+            @media (max-width: $max-mobile-width) {
+                display: none;
+            }
+        }
     }
     &__logo {
         margin: 0 41px 0 0;
     }
 }
+
+// @media (max-width: $max-tablet-width) {
+//     .header {
+//         &__logo {
+//             margin: 0 41px 0 0;
+//         }
+//     }
+// }
+//
+// @media (max-width: $max-mobile-width) {
+//     .header {
+//         &__logo {
+//             margin: 0 41px 0 0;
+//         }
+//     }
+// }

@@ -1,9 +1,22 @@
 .brand {
     display: flex;
     margin: 0 0 63px;
+    &__image {
+        width: 50%;
+        height: auto;
+        @include mobile {
+            display: none;
+        }
+    }
     &__title {
         @include font(48px, 58px, 900);
         text-transform: uppercase;
+        @include tablet {
+            @include font(44px, 53px, 900);
+        }
+        @include mobile {
+            @include font(38px, 46px, 700)
+        }
     }
     &__title-wrapper {
         padding: 0 0 0 91px;
@@ -12,6 +25,13 @@
         display: flex;
         align-items: center;
         position: relative;
+        @include tablet {
+            padding: 0 0 0 69px;
+        }
+        @include mobile {
+            padding: 0 0 0 83px;
+            min-height: 363px;
+        }
     }
     &__title:before {
         content: '';
@@ -20,10 +40,21 @@
         background: $dark-pink;
         position: absolute;
         left: 64px;
+        @include tablet {
+            @media (max-width: $max-tablet-width) {
+                left: 44px;
+            }
+        }
     }
     &__subtitle {
         display: block;
         @include font(32px, 38px, 700);
+        @include tablet {
+            @include font(24px, 29px, 700)
+        }
+        @include mobile {
+            @include font(20px, 24px, 700)
+        }
     }
     &__subtitle-pink {
         color: $dark-pink
