@@ -19,6 +19,11 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 49px;
+        @include tablet {
+            @media (max-width: 1130px) {
+                justify-content: space-around;
+            }
+        }
     }
     &__item {
         position: relative;
@@ -71,7 +76,7 @@
         display: none;
         margin: 0 auto;
         padding: 8px;
-        width: 138px;
+        width: 37%;
         height: 43px;
         background: rgba(255, 255, 255, 0);
         color: #fff;

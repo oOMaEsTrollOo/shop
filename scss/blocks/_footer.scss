@@ -5,14 +5,42 @@
         justify-content: space-around;
         background-image: url(../img/footer.jpg);
         background-repeat: no-repeat;
-        background-size: 100%
+        background-size: 100%;
+        @include tablet {
+            @media (max-width: $max-tablet-width) {
+                background-size: 150%;
+            }
+        }
+        @include tablet {
+            @media (max-width: 1050px) {
+                display: block;
+                background-size: 290%;
+            }
+        }
+        @include mobile {
+            @media (max-width: $max-mobile-width) {
+                background-size: 600%;
+            }
+        }
+    }
+    &__bottom-elems {
+        @include mobile {
+            @media (max-width: $max-mobile-width) {
+                order: 2;
+            }
+        }
     }
     &__top-text {
         padding-top: 30px;
-        width: 360px;
+        width: 96%;
         text-align: center;
         font-size: 20px;
         line-height: 24px;
+        @include tablet {
+            @media (max-width: 1050px) {
+                margin: 0 auto
+            }
+        }
     }
     &__blog {
         padding-top: 87px;
@@ -21,6 +49,11 @@
     &__sub {
         padding-top: 150px;
         text-transform: uppercase;
+        @include tablet {
+            @media (max-width: 1050px) {
+                padding-top: 48px;
+            }
+        }
     }
     &__sub-heading {
         font-size: 24px;
@@ -33,28 +66,51 @@
         font-size: 18px;
         font-weight: 400;
         line-height: 30px;
+        @include tablet {
+            @media (max-width: 1050px) {
+                text-align: center;
+            }
+        }
     }
     &__bottom {
         background-color: $black;
         display: flex;
         justify-content: space-around;
+        @include mobile {
+            @media (max-width: $max-mobile-width) {
+                display: grid;
+            }
+        }
     }
     &__bottom-text {
         color: $whitesmoke;
         padding: 30px 0;
         font-size: 16px;
         line-height: 19px;
-        width: 400px;
+        width: 100%;
+        text-align: center;
     }
     &__bottom-list {
         display: flex;
         padding: 24px 0;
+        @include mobile {
+            @media (max-width: $max-mobile-width) {
+                margin: 0 auto;
+                width: 50%;
+            }
+        }
     }
     &__link {
         padding: 0 8px 0 0
     }
     &__form {
         padding-top: 32px;
+        @include tablet {
+            @media (max-width: 1050px) {
+                text-align: center;
+                padding-bottom: 140px;
+            }
+        }
     }
     &__email {
         -webkit-border-top-left-radius: 30px;
@@ -65,7 +121,7 @@
         border-bottom-left-radius: 30px;
         background-color: $gainsboro;
         border: none;
-        width: 212px;
+        width: 56%;
         height: 49px;
         padding: 0 22px;
         font-family: Lato;
@@ -85,7 +141,7 @@
         border-bottom-right-radius: 30px;
         background-color: $dark-pink;
         border: none;
-        width: 100px;
+        width: 27%;
         height: 49px;
         color: $lavenderblush;
         font-family: Lato;

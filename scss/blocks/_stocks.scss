@@ -5,7 +5,7 @@
         justify-content: space-between;
     }
     &__item {
-        width: 360px;
+        width: 31%;
         min-height: 260px;
         background-color: $brown;
         margin: 0 0 30px;
@@ -14,6 +14,15 @@
         text-transform: uppercase;
         color: $lavenderblush;
         text-align: center;
+        background-size: cover;
+        @include tablet {
+            width: 31%;
+            min-height: 167px;
+        }
+        @include mobile {
+            width: 100%;
+            min-height: 248px;
+        }
     }
     &__item-header {
         color: $dark-pink;
@@ -34,5 +43,11 @@
         background-image: url(../img/accesories.jpg);
         width: 100%;
         margin: 0;
+        @include tablet {
+            min-height: 116px;
+        }
+        @include mobile {
+            min-height: 111px;
+        }
     }
 }
