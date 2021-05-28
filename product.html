@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <title>Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Product</title>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         <div class="container">
             <div class="header__wrapper">
                 <div class="header__controls">
-                    <img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38">
+                    <a href="https://oomaestrolloo.github.io/shop/"><img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38"></a>
                     <img src="./img/loupe.svg" alt="loupe" width="26" height="27">
                 </div>
                 <div class="header__controls">
@@ -66,45 +67,42 @@
     </header>
     <main>
         <div class="brand__black"></div>
-        <section class="brand">
-            <img class="brand__image" src="./img/man.jpg" alt="man" width="800" height="764">
-            <div class="brand__title-wrapper">
-                <h1 class="brand__title">the brand <span class="brand__subtitle">of luxerious <span class="brand__subtitle-pink">fashion</span></span>
-                </h1>
+        <div class="product__new">
+            <section class="product__new-duo container">
+                <h2 class="product__new-text">new arrivals</h2>
+                <p class="product__new-text"><span class="product__new-text2">home / men /</span> new arrivals</p>
+            </section>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+                <div class="product__background carousel-item product__background active">
+                    <img src="./img/product-woman.jpg" class="d-block product__img" alt="woman" width="597" height="724">
+                </div>
             </div>
-        </section>
-        <section class="stocks container">
-            <h2 class="visually-hidden">Stocks</h2>
-            <ul class="stocks__list">
-                <li class="stocks__item stocks__item--woman">
-                    <div>
-                        <p>30% off</p>
-                        <h3 class="stocks__item-header">for women</h3>
-                    </div>
-                </li>
-                <li class="stocks__item stocks__item--man">
-                    <div>
-                        <p>hot deal</p>
-                        <h3 class="stocks__item-header">for men</h3>
-                    </div>
-                </li>
-                <li class="stocks__item stocks__item--kids">
-                    <div>
-                        <p>new arrivals</p>
-                        <h3 class="stocks__item-header">for kids</h3>
-                    </div>
-                </li>
-                <li class="stocks__item stocks__item--accesories">
-                    <div>
-                        <p>luxirous & trendy</p>
-                        <h3 class="stocks__item-header">accesories</h3>
-                    </div>
-                </li>
-            </ul>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon product__control" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon product__control" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <section class="product__cart">
+            <h3 class="product__header">women collection</h3>
+            <span class="product__header-line"></span>
+            <h2 class="product__header-mini">moschino cheap and chic</h2>
+            <p class="product__text">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
+            <p class="product__price">$561</p>
+            <p class="product__line"></p>
+            <div class="product__choose">
+                <p class="product__select">choose color<img class="product__select-img product__select-img1" src="./img/angle-down.svg" alt=""></p>
+                <p class="product__select">choose size<img class="product__select-img product__select-img2" src="./img/angle-down.svg" alt=""></p>
+                <p class="product__select">quantity<img class="product__select-img product__select-img3" src="./img/angle-down.svg" alt=""></p>
+            </div>
+            <button class="product__button" type="button"><img class="product__item-buttonimg" src="./img/cart-red.svg" alt="cart"><span class="product__item-buttontext">Add to Cart</span></button>
         </section>
         <section class="products container">
-            <h2 class="products__heading">Fetured Items</h2>
-            <p class="products__text">Shop for items based on what we featured in this week</p>
             <ul class="products__list">
                 <li class="products__item-1 products__item">
                     <div class="products__product-black1 products__black"></div>
@@ -129,52 +127,6 @@
                     <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                     <p class="products__item-text products__item-price">$52.00</p>
                     <button class="products__item-button products__ghost-button-3 products__ghost-button" type="button"><img class="products__item-buttonimg" src="./img/cart.svg" alt="cart"><span class="products__item-buttontext">Add to Cart</span></button>
-                </li>
-                <li class="products__item-4 products__item">
-                    <div class="products__product-black4 products__black"></div>
-                    <img class="products__item-img" src="./img/product-4.jpg" alt="product-4" width="360" height="420">
-                    <h3 class="products__item-heading">ellery x m'o capsule</h3>
-                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="products__item-text products__item-price">$52.00</p>
-                    <button class="products__item-button products__ghost-button-4 products__ghost-button" type="button"><img class="products__item-buttonimg" src="./img/cart.svg" alt="cart"><span class="products__item-buttontext">Add to Cart</span></button>
-                </li>
-                <li class="products__item-5 products__item">
-                    <div class="products__product-black5 products__black"></div>
-                    <img class="products__item-img" src="./img/product-5.jpg" alt="product-5" width="360" height="420">
-                    <h3 class="products__item-heading">ellery x m'o capsule</h3>
-                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="products__item-text products__item-price">$52.00</p>
-                    <button class="products__item-button products__ghost-button-5 products__ghost-button" type="button"><img class="products__item-buttonimg" src="./img/cart.svg" alt="cart"><span class="products__item-buttontext">Add to Cart</span></button>
-                </li>
-                <li class="products__item-6 products__item">
-                    <div class="products__product-black6 products__black"></div>
-                    <img class="products__item-img" src="./img/product-6.jpg" alt="product-6" width="360" height="420">
-                    <h3 class="products__item-heading">ellery x m'o capsule</h3>
-                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="products__item-text products__item-price">$52.00</p>
-                    <button class="products__item-button products__ghost-button-6 products__ghost-button" type="button"><img class="products__item-buttonimg" src="./img/cart.svg" alt="cart"><span class="products__item-buttontext">Add to Cart</span></button>
-                </li>
-            </ul>
-            <div class="products__button-center">
-                <a class="products__button-all" href="#">Browse All Product</a>
-            </div>
-        </section>
-        <section class="aside">
-            <ul class="aside__list container">
-                <li class="aside__item">
-                    <img class="aside__item-img" src="./img/car.svg" alt="car" width="45" height="32">
-                    <h3 class="aside__item-heading">Free Delivery</h3>
-                    <p class="aside__item-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                </li>
-                <li class="aside__item">
-                    <img class="aside__item-img" src="./img/sales.svg " alt="sales " width="40 " height="40 ">
-                    <h3 class="aside__item-heading">Sales & discounts</h3>
-                    <p class="aside__item-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                </li>
-                <li class="aside__item ">
-                    <img class="aside__item-img" src="./img/crown.svg" alt="crown" width="47" height="35">
-                    <h3 class="aside__item-heading">Quality assurance</h3>
-                    <p class="aside__item-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
                 </li>
             </ul>
         </section>
@@ -218,6 +170,7 @@
         </section>
     </footer>
     <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 
 </html>
