@@ -21,6 +21,12 @@ let gostButton3 = document.querySelector(".products__ghost-button-3")
 let gostButton4 = document.querySelector(".products__ghost-button-4")
 let gostButton5 = document.querySelector(".products__ghost-button-5")
 let gostButton6 = document.querySelector(".products__ghost-button-6")
+let img1 = document.querySelector(".product__select-img1");
+let img2 = document.querySelector(".product__select-img2");
+let img3 = document.querySelector(".product__select-img3");
+let chooseColor = document.querySelector(".product__select1");
+let chooseSize = document.querySelector(".product__select2");
+let quantity = document.querySelector(".product__select3");
 
 headerButton.addEventListener('click', () => {
     if (headerMenu.style.display == "block")
@@ -86,4 +92,23 @@ productItem6.addEventListener('mouseover', () => {
 productItem6.addEventListener('mouseout', () => {
     productBlack6.style.display = "none"
     gostButton6.style.display = "none"
+});
+
+img1.addEventListener('click', () => {
+    if (chooseColor.style.display == "block")
+        chooseColor.style.display = "none", chooseColor.style.display = "none"
+    else chooseColor.style.display = "block", chooseColor.style.display = "block"
+});
+
+img2.addEventListener('click', () => {
+    if (chooseSize.style.display == "block")
+        chooseSize.style.display = "none", chooseSize.style.display = "none"
+    else chooseSize.style.display = "block", chooseSize.style.display = "block"
+});
+
+
+img3.addEventListener('click', () => {
+    if (quantity.style.display == "block")
+        quantity.style.display = "none", quantity.style.display = "none"
+    else quantity.style.display = "block", quantity.style.display = "block"
 });
